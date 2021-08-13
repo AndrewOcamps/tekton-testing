@@ -1,3 +1,3 @@
 FROM alpine
 
-ENTRYPOINT echo hello gerardo
+ENTRYPOINT echo hello GERARDO OCAMPOS
