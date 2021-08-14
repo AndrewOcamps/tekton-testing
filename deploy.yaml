@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: tekton-testing
+  name: tekton-testing
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tekton-testing
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: tekton-testing
+    spec:
+      containers:
+      - image: IMAGE
+        name: tekton-testing
+        resources: {}
