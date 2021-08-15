@@ -20,4 +20,8 @@ spec:
       containers:
       - image: IMAGE
         name: tekton-testing
+        command:
+        - sleep
+        args:
+        - 360
         resources: {}
